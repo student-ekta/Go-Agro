@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://thymeleaf.org"
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>expert login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div th:replace="main_navbar :: main_navbar"></div> 
+
+	<div th:replace="navbar :: navbar"></div>
+<div th:if=${error_message}><div class="alert alert-danger,media align-items-center rounded shadow p-3" role="alert" th:text="${error_message}">
+</div>
+</div>
+
+<div class="container">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="login" style="background-image: url(https://media.istockphoto.com/id/1301128630/photo/young-handsome-agronomist-and-farmer-inspecting-cotton-field-with-tablet.jpg?s=612x612&w=0&k=20&c=q6hMiLUFVaaKwmntlqEziVDTUzYdzC56AF_K-C75g2o=); height: 400px">
+						<h3>Expert Login</h3>
+						<form action="/admin/expert_login" method="post">
+							<div class="row d-flex justify-content-center">
+							  <div class="col-md-6">
+					        	<div class="card px-5 py-5" id="form1">
+							      <div class="form-data">
+							      	<div class="form-group">
+									    <label for="exampleInputEmail1">Username</label>
+									    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+									    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+									  </div>
+									  <div class="form-group">
+									    <label for="exampleInputPassword1">Password</label>
+									    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									  </div>
+									  <div class="form-check">
+									    <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+									    <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+									  </div>
+									  <div class="col-mb-4"> 
+				                    	<button class="btn btn-dark w-100">Login</button> 
+				                      </div>
+							      </div>
+						        </div>
+					          </div>
+					         </div>
+						  
+						</form>
+					</div>
+					
+					
+						
+				</div>
+			</div>
+		</div>
+
+
+</body>
+</html>

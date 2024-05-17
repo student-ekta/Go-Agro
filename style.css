@@ -1,0 +1,124 @@
+.body{
+	font-family: -webkit-body;
+	font-weight: 600;
+}
+.logo h1 {
+	text-align : center;
+	font-family: cursive;
+	color: #400040;
+}
+.top-nav{
+	margin-left: 20%;
+    font-family: -webkit-body;
+    font-weight: 500;
+    font-size: 14px;
+}
+.main-nav {
+	max-height: 50px;
+	background-color:#00A36C;
+	font-family: -webkit-body;
+	font-weight: 600;
+}
+.main-navbar {
+	margin: 0 10%; 
+
+}
+.main-navbar a:hover {
+   background-color:#00A36C;
+   color: white;
+}
+.main-navbar ul li{
+	padding-top: 1%;
+}
+.login {
+	margin-top: 5%;
+	
+	font-family: none;
+	
+}
+.login h3 {
+	
+	text-align: center;
+	
+	
+}
+.register a {
+	
+	margin:400px;
+	color:black;
+	font-family: math;
+	font-size: xx-large;
+	text-decoration: none;
+	background-color: #00A36C;
+
+	}
+	/* .farmer a{
+	padding: 15px;
+	}
+	.buyer a{
+	margin-top: 10px
+	} */
+
+	/* .register a:hover {
+	color: #52595D;
+	background-color: 31906E;
+	} */
+	.register {
+	margin-top: 10%;
+	padding-top: 12px;
+	}
+
+/* nav bar dropdown */
+.dropbtn {
+  padding-top: 7%;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	min-width: 110px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown p{
+	color : var(--bs-nav-link-color);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: #00A36C;
+   color: white;
+}
+.back img{
+	
+	width: -webkit-fill-available;
+	height: max-content;
+}
